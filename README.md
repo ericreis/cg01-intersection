@@ -19,4 +19,5 @@ If both of the methods above fail, just compile the main.cpp source file with yo
 Do not forget to use opengl, glut and glu dependancies. Commands below (using g++):
 
 Linux: g++ main.cpp -o cg01-intersection -std=c++11 -lglut -lGLU -lGL
+
 OSX: g++ main.cpp -o cg01-intersection -std=c++11 -framework OpenGL -framework GLUT
