@@ -3,7 +3,7 @@
 To build just run the build script with the command: ./build.sh
 Please notice that you must have:
 
-1. cmake installed (min version 3.3)
+1. cmake installed (min version 2.8)
 2. make installed
 3. opengl, glu and glut installed
 
