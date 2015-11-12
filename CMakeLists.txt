@@ -1,12 +1,9 @@
 cmake_minimum_required(VERSION 2.8)
 project(cg01_intersection)
 
-if(APPLE)
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -framework OpenGL -framework GLUT")
-elseif(LINUX)
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -lglut -lGLU -lGL")
-endif()
+add_executable(cg01_intersection main.cpp)
+find_package(OpenGL REQUIRED)
+find_package(GLUT REQUIRED)
+include_directories( ${OPENGL_INCLUDE_DIRS} ${GLUT_INCLUDE_DIRS} )
 
-
-set(SOURCE_FILES main.cpp)
-add_executable(cg01_intersection ${SOURCE_FILES})
+target_link_libraries(cg01_intersection ${OPENGL_LIBRARIES} ${GLUT_LIBRARY} )
