@@ -21,3 +21,7 @@ Do not forget to use opengl, glut and glu dependancies. Commands below (using g+
 Linux: g++ main.cpp -o cg01-intersection -std=c++11 -lglut -lGLU -lGL
 
 OSX: g++ main.cpp -o cg01-intersection -std=c++11 -framework OpenGL -framework GLUT
+
+If you keep getting fatal error: GL/glut.h: No such file or directory run this command (linux):
+
+sudo apt-get install freeglut3-dev
